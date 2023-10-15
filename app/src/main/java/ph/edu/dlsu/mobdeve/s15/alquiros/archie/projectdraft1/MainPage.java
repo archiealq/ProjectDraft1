@@ -96,7 +96,7 @@ public class MainPage extends AppCompatActivity {
 
     public void OpenExercise()
     {
-        Intent intent = new Intent(this , SearchItem.class);
+        Intent intent = new Intent(this , Exercise.class);
         intent.putExtra("type", "exercise");
         startActivity(intent);
     }

@@ -10,7 +10,7 @@
         android:id="@+id/ViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Adam Cruz"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="116dp" />
 
@@ -18,7 +18,7 @@
         android:id="@+id/MyAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="My Account"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="77dp" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/ViewWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Weight: 81.67 kg"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="160dp" />
 
@@ -34,7 +34,7 @@
         android:id="@+id/ViewHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Height: 177.8 cm"
         tools:layout_editor_absoluteX="185dp"
         tools:layout_editor_absoluteY="160dp" />
 
@@ -42,7 +42,7 @@
         android:id="@+id/WeightGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Target Weight: 77.11 kg"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="232dp" />
 

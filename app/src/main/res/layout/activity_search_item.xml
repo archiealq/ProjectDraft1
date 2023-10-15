@@ -8,11 +8,11 @@
     tools:context=".SearchItem">
 
     <TextView
-        android:id="@+id/FoodName"
+        android:id="@+id/ItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="Fried Chicken (Breast)"
         app:layout_constraintEnd_toEndOf="@+id/SearchSource"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/SearchSource"
@@ -24,31 +24,52 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
-        android:text="TextView"
+        android:text="Enter your meal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/SearchBar" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/SearchBar"
         android:layout_width="370dp"
         android:layout_height="70dp"
         android:layout_marginTop="44dp"
         android:ems="10"
+        android:hint="Enter Item"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/CalorieValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/FoodName"
+        android:layout_marginTop="4dp"
+        android:text="467 Calories for 1 breast"
+        app:layout_constraintEnd_toEndOf="@+id/ItemName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/FoodName"
-        app:layout_constraintTop_toBottomOf="@+id/FoodName" />
+        app:layout_constraintStart_toStartOf="@+id/ItemName"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="White Rice"
+        app:layout_constraintStart_toStartOf="@+id/CalorieValue"
+        app:layout_constraintTop_toBottomOf="@+id/CalorieValue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="206 Calories for 1 cup"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
