@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <TextView
+        android:id="@+id/DateMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BudgetTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Budget"
+        app:layout_constraintEnd_toStartOf="@+id/FoodTitleMain"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/BudgetInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/BudgetTitleMain"
+        app:layout_constraintStart_toStartOf="@+id/BudgetTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/BudgetTitleMain" />
+
+    <TextView
+        android:id="@+id/FoodTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="76dp"
+        android:text="Food"
+        app:layout_constraintEnd_toStartOf="@+id/ExerciseTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/FoodInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/FoodTitleMain"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/FoodTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/FoodTitleMain" />
+
+    <TextView
+        android:id="@+id/ExerciseTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:text="Exercise"
+        app:layout_constraintEnd_toStartOf="@+id/TotalTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/ExerciseInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ExerciseTitleMain"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ExerciseTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/ExerciseTitleMain" />
+
+    <TextView
+        android:id="@+id/TotalTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:text="Under"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/TotalInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/TotalTitleMain"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/TotalTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/TotalTitleMain" />
+
+    <TextView
+        android:id="@+id/BreakfastTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="Breakfast"
+        app:layout_constraintEnd_toStartOf="@+id/AddBreakfast"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AddBreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="80dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LunchTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Lunch"
+        app:layout_constraintEnd_toEndOf="@+id/BreakfastTitleMain"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/BreakfastTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/BreakfastTitleMain" />
+
+    <Button
+        android:id="@+id/AddLunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="@+id/AddBreakfast"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddBreakfast"
+        app:layout_constraintTop_toBottomOf="@+id/AddBreakfast" />
+
+    <TextView
+        android:id="@+id/DinnerTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Dinner"
+        app:layout_constraintEnd_toEndOf="@+id/LunchTitleMain"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/LunchTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/LunchTitleMain" />
+
+    <Button
+        android:id="@+id/AddDinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="@+id/AddLunch"
+        app:layout_constraintStart_toStartOf="@+id/AddLunch"
+        app:layout_constraintTop_toBottomOf="@+id/AddLunch" />
+
+    <TextView
+        android:id="@+id/SnackTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Snack"
+        app:layout_constraintEnd_toEndOf="@+id/DinnerTitleMain"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/DinnerTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/DinnerTitleMain" />
+
+    <Button
+        android:id="@+id/AddSnack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="@+id/AddDinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddDinner"
+        app:layout_constraintTop_toBottomOf="@+id/AddDinner" />
+
+    <TextView
+        android:id="@+id/ExcerciseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Exercise"
+        app:layout_constraintEnd_toEndOf="@+id/SnackTitleMain"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/SnackTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/SnackTitleMain" />
+
+    <Button
+        android:id="@+id/AddExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="@+id/AddSnack"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddSnack"
+        app:layout_constraintTop_toBottomOf="@+id/AddSnack" />
+</androidx.constraintlayout.widget.ConstraintLayout>
