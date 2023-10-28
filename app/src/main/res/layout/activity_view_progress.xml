@@ -7,6 +7,16 @@
     tools:context=".ViewProgress">
 
     <TextView
+        android:id="@+id/PerMonthTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="Per Month"
+        app:layout_constraintEnd_toEndOf="@+id/ProgressInformation"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressInformation" />
+
+    <TextView
         android:id="@+id/ViewProgressTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,12 +39,22 @@
         app:layout_constraintTop_toBottomOf="@+id/ViewProgressTitle" />
 
     <TextView
+        android:id="@+id/TotalCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:text="Carbohydrates: 10.59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateRange" />
+
+    <TextView
         android:id="@+id/DateRange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="48dp"
-        android:text="TextView"
+        android:layout_marginTop="144dp"
+        android:text="October 15 - 21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProgressInformation" />
 
@@ -42,9 +62,10 @@
         android:id="@+id/TotalCalorie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="TextView"
+        android:layout_marginTop="16dp"
+        android:text="Total Calories: 1203"
         app:layout_constraintEnd_toEndOf="@+id/DateRange"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/DateRange"
         app:layout_constraintTop_toBottomOf="@+id/DateRange" />
 
@@ -53,40 +74,110 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="Protein: 105"
         app:layout_constraintEnd_toEndOf="@+id/TotalCalorie"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TotalCalorie"
         app:layout_constraintTop_toBottomOf="@+id/TotalCalorie" />
-
-    <TextView
-        android:id="@+id/TotalCarbs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="148dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DateRange" />
 
     <TextView
         android:id="@+id/TotalFat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:text="Fat: 35"
         app:layout_constraintEnd_toEndOf="@+id/TotalCarbs"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TotalCarbs"
         app:layout_constraintTop_toBottomOf="@+id/TotalCarbs" />
 
-    <Switch
-        android:id="@+id/switch1"
+    <TextView
+        android:id="@+id/PerWeekTab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Switch"
+        android:text="Per Week"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/PerMonthTab"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/ProgressInformation"
+        app:layout_constraintTop_toTopOf="@+id/PerMonthTab" />
+
+    <TextView
+        android:id="@+id/DummyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="October 22-28"
+        app:layout_constraintEnd_toEndOf="@+id/TotalProtein"
+        app:layout_constraintStart_toStartOf="@+id/TotalProtein"
+        app:layout_constraintTop_toBottomOf="@+id/TotalProtein" />
+
+    <TextView
+        android:id="@+id/DummyCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates: 150"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProgressInformation" />
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toEndOf="@+id/DummyCalories"
+        app:layout_constraintTop_toTopOf="@+id/DummyCalories" />
+
+    <TextView
+        android:id="@+id/DummyCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories: 776"
+        app:layout_constraintEnd_toEndOf="@+id/DummyDate"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/DummyDate"
+        app:layout_constraintTop_toBottomOf="@+id/DummyDate" />
+
+    <TextView
+        android:id="@+id/DummyProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein 300"
+        app:layout_constraintEnd_toEndOf="@+id/DummyCalories"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DummyCalories"
+        app:layout_constraintTop_toBottomOf="@+id/DummyCalories" />
+
+    <TextView
+        android:id="@+id/DummyFats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat: 250"
+        app:layout_constraintEnd_toEndOf="@+id/DummyCarbs"
+        app:layout_constraintStart_toStartOf="@+id/DummyCarbs"
+        app:layout_constraintTop_toBottomOf="@+id/DummyCarbs" />
+
+    <TextView
+        android:id="@+id/ViewProgressProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:text="View Progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HomeProgress"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/MyAccountProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="My Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeProgress" />
+
+    <TextView
+        android:id="@+id/HomeProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:text="Home"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountProgress"
+        app:layout_constraintTop_toTopOf="@+id/ViewProgressProgress" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -107,4 +107,34 @@
         app:layout_constraintEnd_toEndOf="@+id/CalorieArticle"
         app:layout_constraintTop_toBottomOf="@+id/CalorieArticle" />
 
+    <TextView
+        android:id="@+id/ViewProgressLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="68dp"
+        android:text="View Progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HomeLearn"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/HomeLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="Home"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountLearn"
+        app:layout_constraintTop_toTopOf="@+id/ViewProgressLearn" />
+
+    <TextView
+        android:id="@+id/MyAccountLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:text="My Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeLearn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

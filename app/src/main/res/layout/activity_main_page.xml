@@ -7,168 +7,153 @@
     tools:context=".MainPage">
 
     <TextView
+        android:id="@+id/MyAccountMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeTabMain" />
+
+    <TextView
+        android:id="@+id/HomeTabMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountMain"
+        app:layout_constraintStart_toEndOf="@+id/ViewProgressMain"
+        app:layout_constraintTop_toTopOf="@+id/ViewProgressMain" />
+
+    <TextView
+        android:id="@+id/ViewProgressMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
         android:id="@+id/DateMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Date"
+        android:text="10/27/2023"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/BudgetTitleMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Budget"
-        app:layout_constraintEnd_toStartOf="@+id/FoodTitleMain"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
-
-    <TextView
-        android:id="@+id/BudgetInputMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/BudgetTitleMain"
-        app:layout_constraintStart_toStartOf="@+id/BudgetTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/BudgetTitleMain" />
-
-    <TextView
-        android:id="@+id/FoodTitleMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="76dp"
-        android:text="Food"
-        app:layout_constraintEnd_toStartOf="@+id/ExerciseTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
-
-    <TextView
-        android:id="@+id/FoodInputMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/FoodTitleMain"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="@+id/FoodTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/FoodTitleMain" />
-
-    <TextView
-        android:id="@+id/ExerciseTitleMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="52dp"
-        android:text="Exercise"
-        app:layout_constraintEnd_toStartOf="@+id/TotalTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
-
-    <TextView
-        android:id="@+id/ExerciseInputMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/ExerciseTitleMain"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/ExerciseTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/ExerciseTitleMain" />
-
-    <TextView
         android:id="@+id/TotalTitleMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:text="Under"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DateMain" />
 
     <TextView
+        android:id="@+id/FoodInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="776"
+        app:layout_constraintEnd_toEndOf="@+id/FoodTitleMain"
+        app:layout_constraintStart_toStartOf="@+id/FoodTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/FoodTitleMain" />
+
+    <TextView
+        android:id="@+id/FoodTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="Food"
+        app:layout_constraintEnd_toStartOf="@+id/ExerciseTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/ExerciseTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:text="Exercise"
+        app:layout_constraintEnd_toStartOf="@+id/TotalTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/BudgetInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="1703"
+        app:layout_constraintEnd_toEndOf="@+id/BudgetTitleMain"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/BudgetTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/BudgetTitleMain" />
+
+    <TextView
+        android:id="@+id/BudgetTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Budget"
+        app:layout_constraintEnd_toStartOf="@+id/FoodTitleMain"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateMain" />
+
+    <TextView
+        android:id="@+id/ExerciseInputMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="476"
+        app:layout_constraintEnd_toEndOf="@+id/ExerciseTitleMain"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="@+id/ExerciseTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/ExerciseTitleMain" />
+
+    <TextView
         android:id="@+id/TotalInputMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
+        android:layout_marginTop="4dp"
+        android:text="1227"
         app:layout_constraintEnd_toEndOf="@+id/TotalTitleMain"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="@+id/TotalTitleMain"
         app:layout_constraintTop_toBottomOf="@+id/TotalTitleMain" />
 
-    <TextView
-        android:id="@+id/BreakfastTitleMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:text="Breakfast"
-        app:layout_constraintEnd_toStartOf="@+id/AddBreakfast"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/AddBreakfast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="48dp"
         android:text="Add Food"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/LunchTitleMain"
+        android:id="@+id/ExcerciseTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Lunch"
-        app:layout_constraintEnd_toEndOf="@+id/BreakfastTitleMain"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="@+id/BreakfastTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/BreakfastTitleMain" />
-
-    <Button
-        android:id="@+id/AddLunch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Add Food"
-        app:layout_constraintEnd_toEndOf="@+id/AddBreakfast"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/AddBreakfast"
-        app:layout_constraintTop_toBottomOf="@+id/AddBreakfast" />
-
-    <TextView
-        android:id="@+id/DinnerTitleMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Dinner"
-        app:layout_constraintEnd_toEndOf="@+id/LunchTitleMain"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/LunchTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/LunchTitleMain" />
-
-    <Button
-        android:id="@+id/AddDinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Add Food"
-        app:layout_constraintEnd_toEndOf="@+id/AddLunch"
-        app:layout_constraintStart_toStartOf="@+id/AddLunch"
-        app:layout_constraintTop_toBottomOf="@+id/AddLunch" />
+        android:layout_marginTop="96dp"
+        android:text="Exercise"
+        app:layout_constraintEnd_toEndOf="@+id/SnackTitleMain"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="@+id/SnackTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/SnackTitleMain" />
 
     <TextView
         android:id="@+id/SnackTitleMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="84dp"
         android:text="Snack"
         app:layout_constraintEnd_toEndOf="@+id/DinnerTitleMain"
         app:layout_constraintHorizontal_bias="1.0"
@@ -176,35 +161,187 @@
         app:layout_constraintTop_toBottomOf="@+id/DinnerTitleMain" />
 
     <Button
+        android:id="@+id/AddExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Add Excercise"
+        app:layout_constraintEnd_toEndOf="@+id/AddSnack"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddSnack"
+        app:layout_constraintTop_toBottomOf="@+id/AddSnack" />
+
+    <TextView
+        android:id="@+id/LunchTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Lunch"
+        app:layout_constraintEnd_toEndOf="@+id/BreakfastTitleMain"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/BreakfastTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/BreakfastTitleMain" />
+
+    <TextView
+        android:id="@+id/LunchFoodMain"
+        android:layout_width="123dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="1/2 Cup of Rice 2 Grilled Chicken"
+        app:layout_constraintEnd_toEndOf="@+id/LunchTitleMain"
+        app:layout_constraintStart_toStartOf="@+id/LunchTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/LunchTitleMain" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Calories: 250"
+        app:layout_constraintEnd_toEndOf="@+id/LunchFoodMain"
+        app:layout_constraintStart_toStartOf="@+id/LunchFoodMain"
+        app:layout_constraintTop_toBottomOf="@+id/LunchFoodMain" />
+
+    <TextView
+        android:id="@+id/DinnerTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Dinner"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/DinnerCaloriesMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Calories: 150"
+        app:layout_constraintEnd_toEndOf="@+id/DinnerFoodMain"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="@+id/DinnerFoodMain"
+        app:layout_constraintTop_toBottomOf="@+id/DinnerFoodMain" />
+
+    <TextView
+        android:id="@+id/BreakfastTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Breakfast"
+        app:layout_constraintEnd_toStartOf="@+id/AddBreakfast"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SnackFoodMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="2 Banana"
+        app:layout_constraintEnd_toEndOf="@+id/SnackTitleMain"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/SnackTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/SnackTitleMain" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Calories 176"
+        app:layout_constraintEnd_toEndOf="@+id/SnackFoodMain"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/SnackFoodMain"
+        app:layout_constraintTop_toBottomOf="@+id/SnackFoodMain" />
+
+    <TextView
+        android:id="@+id/BreakfastFoodCalories"
+        android:layout_width="55dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="15dp"
+        android:text="Calories: 200"
+        app:layout_constraintEnd_toEndOf="@+id/BreakfastFoodMain"
+        app:layout_constraintStart_toStartOf="@+id/BreakfastFoodMain"
+        app:layout_constraintTop_toBottomOf="@+id/BreakfastFoodMain" />
+
+    <Button
+        android:id="@+id/AddLunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="@+id/AddBreakfast"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddBreakfast"
+        app:layout_constraintTop_toBottomOf="@+id/AddBreakfast" />
+
+    <TextView
+        android:id="@+id/DinnerFoodMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="1 Cup Oatmeal"
+        app:layout_constraintEnd_toEndOf="@+id/DinnerTitleMain"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="@+id/DinnerTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/DinnerTitleMain" />
+
+    <TextView
+        android:id="@+id/WorkoutMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="1 Hour Weightlifting (Heavy)"
+        app:layout_constraintEnd_toEndOf="@+id/ExcerciseTitle"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/ExcerciseTitle"
+        app:layout_constraintTop_toBottomOf="@+id/ExcerciseTitle" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Calories: - 300"
+        app:layout_constraintEnd_toEndOf="@+id/WorkoutMain"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/WorkoutMain"
+        app:layout_constraintTop_toBottomOf="@+id/WorkoutMain" />
+
+    <Button
+        android:id="@+id/AddDinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Add Food"
+        app:layout_constraintEnd_toEndOf="@+id/AddLunch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AddLunch"
+        app:layout_constraintTop_toBottomOf="@+id/AddLunch" />
+
+    <TextView
+        android:id="@+id/BreakfastFoodMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="1 Toast 1 Latte"
+        app:layout_constraintEnd_toEndOf="@+id/BreakfastTitleMain"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/BreakfastTitleMain"
+        app:layout_constraintTop_toBottomOf="@+id/BreakfastTitleMain" />
+
+    <Button
         android:id="@+id/AddSnack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="104dp"
         android:text="Add Food"
         app:layout_constraintEnd_toEndOf="@+id/AddDinner"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/AddDinner"
         app:layout_constraintTop_toBottomOf="@+id/AddDinner" />
 
-    <TextView
-        android:id="@+id/ExcerciseTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="Exercise"
-        app:layout_constraintEnd_toEndOf="@+id/SnackTitleMain"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="@+id/SnackTitleMain"
-        app:layout_constraintTop_toBottomOf="@+id/SnackTitleMain" />
-
-    <Button
-        android:id="@+id/AddExercise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Add Food"
-        app:layout_constraintEnd_toEndOf="@+id/AddSnack"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/AddSnack"
-        app:layout_constraintTop_toBottomOf="@+id/AddSnack" />
 </androidx.constraintlayout.widget.ConstraintLayout>

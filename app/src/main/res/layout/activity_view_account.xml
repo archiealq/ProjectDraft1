@@ -10,40 +10,82 @@
         android:id="@+id/ViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
         android:text="Adam Cruz"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="116dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyAccount" />
 
     <TextView
         android:id="@+id/MyAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="My Account"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="77dp" />
-
-    <TextView
-        android:id="@+id/ViewWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Weight: 81.67 kg"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ViewHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
         android:text="Height: 177.8 cm"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintStart_toEndOf="@+id/ViewWeight"
+        app:layout_constraintTop_toTopOf="@+id/ViewWeight" />
+
+    <TextView
+        android:id="@+id/ViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Weight: 81.67 kg"
+        app:layout_constraintStart_toStartOf="@+id/ViewName"
+        app:layout_constraintTop_toBottomOf="@+id/ViewName" />
 
     <TextView
         android:id="@+id/WeightGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="Target Weight: 77.11 kg"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintEnd_toEndOf="@+id/ViewHeight"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="@+id/ViewWeight"
+        app:layout_constraintTop_toBottomOf="@+id/ViewWeight" />
+
+    <TextView
+        android:id="@+id/MyAccountAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:text="My Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeAccount" />
+
+    <TextView
+        android:id="@+id/HomeAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="72dp"
+        android:text="Home"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountAccount"
+        app:layout_constraintTop_toTopOf="@+id/ViewProgressAccount" />
+
+    <TextView
+        android:id="@+id/ViewProgressAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="View Progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HomeAccount"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
