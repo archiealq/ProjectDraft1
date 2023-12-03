@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BF2D73B8"
     tools:context=".Exercise">
 
     <Button
@@ -23,6 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:text="Weight Lifting"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -34,6 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="200 Calories per Hour"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -45,6 +51,8 @@
         android:ems="10"
         android:hint="Enter Workout Here"
         android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,6 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Find your excerise below"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/WorkoutSearch"
         app:layout_constraintTop_toBottomOf="@+id/WorkoutSearch" />
 
@@ -65,6 +76,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Brisk Walk"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/WorkoutInstruction"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/WorkoutInstruction"
@@ -75,10 +89,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="150 Calories per 30 Minutes"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/AddWorkButton1"
@@ -92,31 +108,56 @@
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/accountProgress"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="OpenAccount"
         android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="@+id/homeExercise" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/progressExercise"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:text="Home"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="OpenProgress"
         android:text="View Progress"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintEnd_toStartOf="@+id/homeExercise"
+        app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/learnExcercise"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="OpenLearn"
+        android:text="Learn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/accountProgress"
+        app:layout_constraintTop_toTopOf="@+id/homeExercise" />
+
+    <TextView
+        android:id="@+id/homeExercise"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="OpenHome"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/learnExcercise"
+        app:layout_constraintTop_toTopOf="@+id/progressExercise" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

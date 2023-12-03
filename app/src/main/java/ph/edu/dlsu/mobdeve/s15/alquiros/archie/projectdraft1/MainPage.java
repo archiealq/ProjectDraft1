@@ -101,4 +101,26 @@ public class MainPage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void OpenLearn(View view)
+    {
+        Intent intent = new Intent(this , Learn.class);
+        startActivity(intent);
+    }
+
+    public void OpenProgress(View view)
+    {
+        Intent intent = new Intent(this , ViewProgress.class);
+        startActivity(intent);
+    }
+
+    public void OpenAccount(View view)
+    {
+        Intent intent = new Intent(this , ViewProgress.class);
+        startActivity(intent);
+    }
+
+
+
+
+
 }

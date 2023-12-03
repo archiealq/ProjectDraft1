@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "114937201208",
+    "project_id": "mainprojectdb",
+    "storage_bucket": "mainprojectdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114937201208:android:980d0b971215aa64919ccd",
+        "android_client_info": {
+          "package_name": "ph.edu.dlsu.mobdeve.s15.alquiros.archie.projectdraft1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA70Zye25DZyqCIpXj0qnw5pzMtIFb6tJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

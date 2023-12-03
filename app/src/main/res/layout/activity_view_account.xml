@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BF2D73B8"
     tools:context=".ViewAccount">
 
     <TextView
@@ -13,6 +14,8 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="132dp"
         android:text="Adam Cruz"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MyAccount" />
 
@@ -22,6 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +40,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:text="Height: 177.8 cm"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/ViewWeight"
         app:layout_constraintTop_toTopOf="@+id/ViewWeight" />
 
@@ -43,6 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Weight: 81.67 kg"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/ViewName"
         app:layout_constraintTop_toBottomOf="@+id/ViewName" />
 
@@ -52,40 +62,63 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="Target Weight: 77.11 kg"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/ViewHeight"
         app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="@+id/ViewWeight"
-        app:layout_constraintTop_toBottomOf="@+id/ViewWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/ViewWeight"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/MyAccountAccount"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="32dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="OpenAccount"
         android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/HomeAccount" />
+        app:layout_constraintTop_toTopOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/HomeAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="72dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="OpenHome"
         android:text="Home"
-        app:layout_constraintEnd_toStartOf="@+id/MyAccountAccount"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/ViewProgressAccount" />
 
     <TextView
         android:id="@+id/ViewProgressAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="136dp"
+        android:layout_width="92dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="OpenProgress"
         android:text="View Progress"
+        android:textColor="@color/white"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/HomeAccount"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="OpenLearn"
+        android:text="Learn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountAccount"
+        app:layout_constraintTop_toTopOf="@+id/HomeAccount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

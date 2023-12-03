@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BF2D73B8"
     tools:context=".ViewProgress">
 
     <TextView
@@ -13,6 +14,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="76dp"
         android:text="Per Month"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/ProgressInformation"
         app:layout_constraintTop_toBottomOf="@+id/ProgressInformation" />
 
@@ -22,6 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="View Progress"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="See how far you've come in your fitness journey"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/ViewProgressTitle"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/ViewProgressTitle"
@@ -43,8 +51,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="36dp"
         android:text="Carbohydrates: 10.59"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DateRange" />
 
@@ -55,6 +65,9 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="144dp"
         android:text="October 15 - 21"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProgressInformation" />
 
@@ -64,6 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Total Calories: 1203"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/DateRange"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/DateRange"
@@ -75,6 +90,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Protein: 105"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/TotalCalorie"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TotalCalorie"
@@ -86,6 +103,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Fat: 35"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/TotalCarbs"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TotalCarbs"
@@ -96,6 +115,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Per Week"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/PerMonthTab"
         app:layout_constraintHorizontal_bias="0.531"
@@ -108,6 +129,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="October 22-28"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/TotalProtein"
         app:layout_constraintStart_toStartOf="@+id/TotalProtein"
         app:layout_constraintTop_toBottomOf="@+id/TotalProtein" />
@@ -117,6 +141,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Carbohydrates: 150"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toEndOf="@+id/DummyCalories"
@@ -127,6 +153,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Calories: 776"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/DummyDate"
         app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toStartOf="@+id/DummyDate"
@@ -137,6 +165,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Protein 300"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/DummyCalories"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/DummyCalories"
@@ -147,37 +177,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fat: 250"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/DummyCarbs"
         app:layout_constraintStart_toStartOf="@+id/DummyCarbs"
         app:layout_constraintTop_toBottomOf="@+id/DummyCarbs" />
 
     <TextView
-        android:id="@+id/ViewProgressProgress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="108dp"
-        android:text="View Progress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/HomeProgress"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/MyAccountProgress"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="OpenAccount"
         android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/HomeProgress" />
 
     <TextView
         android:id="@+id/HomeProgress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="OpenHome"
         android:text="Home"
-        app:layout_constraintEnd_toStartOf="@+id/MyAccountProgress"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/LearnProgressLink"
         app:layout_constraintTop_toTopOf="@+id/ViewProgressProgress" />
+
+    <TextView
+        android:id="@+id/ViewProgressProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="104dp"
+        android:onClick="OpenProgress"
+        android:text="View Progress"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HomeProgress"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/LearnProgressLink"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="OpenLearn"
+        android:text="Learn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountProgress"
+        app:layout_constraintTop_toTopOf="@+id/HomeProgress" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

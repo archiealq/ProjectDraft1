@@ -5,6 +5,7 @@
     android:id="@+id/CalorieAmount"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BF2D73B8"
     tools:context=".SearchItem">
 
     <TextView
@@ -13,6 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Fried Chicken (Breast)"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/SearchSource"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/SearchSource"
@@ -25,6 +29,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="Enter your meal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SearchBar" />
 
@@ -36,6 +43,8 @@
         android:ems="10"
         android:hint="Enter Item"
         android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="467 Calories for 1 breast"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/ItemName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/ItemName"
@@ -59,6 +70,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="36dp"
         android:text="White Rice"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/CalorieValue"
         app:layout_constraintTop_toBottomOf="@+id/CalorieValue" />
 
@@ -68,6 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="206 Calories for 1 cup"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -94,9 +110,12 @@
     <TextView
         android:id="@+id/ViewProgressFood"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginBottom="84dp"
+        android:onClick="OpenProgress"
         android:text="View Progress"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/HomeFood"
         app:layout_constraintHorizontal_bias="0.453"
@@ -105,18 +124,36 @@
     <TextView
         android:id="@+id/HomeFood"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
         android:text="Home"
-        app:layout_constraintEnd_toStartOf="@+id/MyAccountFood"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/learnLearn"
         app:layout_constraintTop_toTopOf="@+id/ViewProgressFood" />
 
     <TextView
         android:id="@+id/MyAccountFood"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="OpenAccount"
         android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeFood" />
+
+    <TextView
+        android:id="@+id/learnLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:width="48dp"
+        android:onClick="OpenLearn"
+        android:text="Learn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountFood"
         app:layout_constraintTop_toTopOf="@+id/HomeFood" />
 </androidx.constraintlayout.widget.ConstraintLayout>

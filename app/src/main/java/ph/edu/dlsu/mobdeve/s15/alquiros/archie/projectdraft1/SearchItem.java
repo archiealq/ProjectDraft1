@@ -55,4 +55,29 @@ public class SearchItem extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void OpenAccount(View view)
+    {
+        Intent intent = new Intent(this , ViewAccount.class);
+        startActivity(intent);
+    }
+
+    public void OpenHome(View view)
+    {
+        Intent intent = new Intent(this , MainPage.class);
+        startActivity(intent);
+    }
+
+    public void OpenProgress(View view)
+    {
+        Intent intent = new Intent(this , ViewProgress.class);
+        startActivity(intent);
+    }
+
+    public void OpenLearn(View view)
+    {
+        Intent intent = new Intent(this , Learn.class);
+        startActivity(intent);
+    }
+
+
 }

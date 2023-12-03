@@ -4,25 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BF2D73B8"
     tools:context=".Learn">
 
     <TextView
         android:id="@+id/CaloriesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="304dp"
         android:text="What are Calories"
-        app:layout_constraintStart_toStartOf="@+id/MacroContent"
-        app:layout_constraintTop_toBottomOf="@+id/MacroContent" />
-
-    <TextView
-        android:id="@+id/CalorieArticle"
-        android:layout_width="344dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="12dp"
-        android:text="A calorie is a unit of energy. In nutrition, calories refer to the energy people get from the food and drink they consume, and the energy they use in physical activity."
-        app:layout_constraintStart_toStartOf="@+id/CaloriesTitle"
-        app:layout_constraintTop_toBottomOf="@+id/CaloriesTitle" />
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MacroArticleTitle"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/LearnPageTitle"
@@ -30,29 +25,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Learn Page"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/LearnInformationTab"
-        android:layout_width="339dp"
-        android:layout_height="52dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
         android:layout_marginTop="12dp"
         android:text="New to Fitness? We gotchu. Here are several things you need to know when starting out in the gym "
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/LearnPageTitle"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="@+id/LearnPageTitle"
         app:layout_constraintTop_toBottomOf="@+id/LearnPageTitle" />
-
-    <TextView
-        android:id="@+id/MacroContent"
-        android:layout_width="352dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="4dp"
-        android:text="Macronutrients are the cornerstones of your diet. Learn more about where to get them, how much of them you need and what sources to avoid."
-        app:layout_constraintStart_toStartOf="@+id/MacroArticleTitle"
-        app:layout_constraintTop_toBottomOf="@+id/MacroArticleTitle" />
 
     <TextView
         android:id="@+id/MacroArticleTitle"
@@ -61,80 +52,99 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="24dp"
         android:text="What are &quot;Macros&quot;?"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/LearnInformationTab"
         app:layout_constraintTop_toBottomOf="@+id/LearnInformationTab" />
-
-    <TextView
-        android:id="@+id/MacrosLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Read More"
-        app:layout_constraintEnd_toEndOf="@+id/MacroContent"
-        app:layout_constraintTop_toBottomOf="@+id/MacroContent" />
 
     <TextView
         android:id="@+id/MusclesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="484dp"
         android:text="What are Muscle Groups"
-        app:layout_constraintStart_toStartOf="@+id/CalorieArticle"
-        app:layout_constraintTop_toBottomOf="@+id/CalorieArticle" />
-
-    <TextView
-        android:id="@+id/MuscleLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:text="Read More"
-        app:layout_constraintEnd_toEndOf="@+id/MuscleArticle"
-        app:layout_constraintTop_toBottomOf="@+id/MuscleArticle" />
-
-    <TextView
-        android:id="@+id/MuscleArticle"
-        android:layout_width="355dp"
-        android:layout_height="133dp"
-        android:text="There are three types of muscles in your body: cardiac, smooth, and skeletal. Cardiac muscles are the muscles that control your heart. Smooth muscles control involuntary functions like constricting your blood vessels. Skeletal muscles are the muscles that you target in the gym that help your body move. They make up about 40 percentTrusted Source of your body weight."
-        app:layout_constraintStart_toStartOf="@+id/MusclesTitle"
-        app:layout_constraintTop_toBottomOf="@+id/MusclesTitle" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Read More"
-        app:layout_constraintEnd_toEndOf="@+id/CalorieArticle"
-        app:layout_constraintTop_toBottomOf="@+id/CalorieArticle" />
-
-    <TextView
-        android:id="@+id/ViewProgressLearn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="68dp"
-        android:text="View Progress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/HomeLearn"
-        app:layout_constraintHorizontal_bias="0.353"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CaloriesTitle"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/HomeLearn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="OpenHome"
         android:text="Home"
-        app:layout_constraintEnd_toStartOf="@+id/MyAccountLearn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/LearnLearn"
         app:layout_constraintTop_toTopOf="@+id/ViewProgressLearn" />
+
+    <TextView
+        android:id="@+id/ViewProgressLearn"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="OpenProgress"
+        android:text="View Progress"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/HomeLearn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/MyAccountLearn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="OpenAccount"
         android:text="My Account"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/HomeLearn" />
+
+    <TextView
+        android:id="@+id/LearnLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Learn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/MyAccountLearn"
+        app:layout_constraintTop_toTopOf="@+id/HomeLearn" />
+
+    <WebView
+        android:id="@+id/macrosVideo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MacroArticleTitle" />
+
+    <WebView
+        android:id="@+id/caloriesVideo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CaloriesTitle" />
+
+    <WebView
+        android:id="@+id/muscleVideo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MusclesTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
