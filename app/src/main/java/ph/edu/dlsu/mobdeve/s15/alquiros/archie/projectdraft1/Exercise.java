@@ -2,8 +2,11 @@ package ph.edu.dlsu.mobdeve.s15.alquiros.archie.projectdraft1;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +20,7 @@ public class Exercise extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
 
@@ -36,6 +40,9 @@ public class Exercise extends AppCompatActivity {
                 AddToMain();
             }
         });
+
+        Initialize();
+
     }
 
     public void AddToMain()
@@ -66,20 +73,31 @@ public class Exercise extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @SuppressLint("ResourceAsColor")
     public void Initialize()
     {
+        System.out.println("in");
         String[] textArray={"one","two","asdasasdf asdf dsdaa"};
         int length=textArray.length;
-        ConstraintLayout layout = new ConstraintLayout(this);
+        ConstraintLayout layout =(ConstraintLayout) findViewById(R.id.ConstLay);
+        ConstraintSet constSet = new ConstraintSet();
+        View lastView = findViewById(R.id.excerciseCalBurnt);
 
         for(int i=0;i<length;i++){
-            ConstraintLayout.LayoutParams constParam = new ConstraintLayout.LayoutParams(
-                    ConstraintLayout.LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-            TextView tv=new TextView(getApplicationContext());
+            System.out.println("in");
+            TextView tv=new TextView(this);
             tv.setText(textArray[i]);
-            constParam.addRule(ConstraintLayout.BELOW, tv.getId());
-            layout.addView(tv, relativeParams);
+            tv.setTextColor(Color.parseColor("#FFFFFF"));
+            tv.setId(View.generateViewId());
+            layout.addView(tv, 0);
+            constSet.clone(layout);
+            constSet.connect(tv.getId(), ConstraintSet.TOP, lastView.getId(), ConstraintSet.BOTTOM, 1);
+            constSet.connect(tv.getId(), ConstraintSet.LEFT, lastView.getId(), ConstraintSet.LEFT, 1);
+            constSet.applyTo(layout);
+            lastView=tv;
         }
+
+
     }
 
 
